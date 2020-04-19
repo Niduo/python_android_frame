@@ -1,0 +1,17 @@
+<home>
+    <case1>
+        <result1>10</result1>
+        <result2>20</result2>
+    </case1>
+    <case2>
+        <result>热门话题</result>
+    </case2>
+    <case3>
+        <result>推荐</result>
+    </case3>
+    <case4>
+        <result>推荐</result>
+    </case4>
+</home>
+
+

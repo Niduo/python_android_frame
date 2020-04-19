@@ -240,8 +240,8 @@ function filter_table(elem) {
     not_found_message.hidden = !all_rows_hidden;
 }
 </script>
-    <h1>test_home_20200417_131845.html</h1>
-    <p>Report generated on 17-Apr-2020 at 13:19:43 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v2.0.1</p>
+    <h1>test_home_20200419_204456.html</h1>
+    <p>Report generated on 19-Apr-2020 at 20:47:08 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v2.0.1</p>
     <h2>Environment</h2>
     <table id="environment">
       <tr>
@@ -260,8 +260,8 @@ function filter_table(elem) {
         <td>Python</td>
         <td>3.7.0</td></tr></table>
     <h2>Summary</h2>
-    <p>1 tests ran in 56.88 seconds. </p>
-    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="passed">0 passed</span>, <input checked="true" class="filter" data-test-result="skipped" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="skipped">1 skipped</span>, <input checked="true" class="filter" data-test-result="failed" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="failed">1 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>, <input checked="true" class="filter" data-test-result="rerun" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="rerun">0 rerun</span>
+    <p>4 tests ran in 131.07 seconds. </p>
+    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="passed">4 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="failed">0 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>, <input checked="true" class="filter" data-test-result="rerun" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="rerun">0 rerun</span>
     <h2>Results</h2>
     <table id="results-table">
       <thead id="results-table-head">
@@ -272,24 +272,103 @@ function filter_table(elem) {
           <th>Links</th></tr>
         <tr hidden="true" id="not-found-message">
           <th colspan="4">No results found. Try to check the filters</th></tr></thead>
-      <tbody class="failed results-table-row">
+      <tbody class="passed results-table-row">
         <tr>
-          <td class="col-result">Failed</td>
-          <td class="col-name">case/test_home.py::TestRun::test_home_swift</td>
-          <td class="col-duration">36.56</td>
+          <td class="col-result">Passed</td>
+          <td class="col-name">case/test_stock_select.py::TestStockSelect::test_add_stock[京东-jd]</td>
+          <td class="col-duration">37.01</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="log">self = &lt;case.test_home.TestRun object at 0x0000000004F7DF98&gt;<br/><br/>    def test_home_swift(self):<br/>        self.homePage.swipe_home()<br/>        act = self.homePage.swipe_home_result()<br/>&gt;       assert act == &quot;热门话题&quot;, &quot;act, %s, 不等于热门话题&quot; % act<br/><span class="error">E       AssertionError: act, None, 不等于热门话题</span><br/><span class="error">E       assert None == &#x27;热门话题&#x27;</span><br/><span class="error">E         +None</span><br/><span class="error">E         -&#x27;热门话题&#x27;</span><br/><br/>case\test_home.py:34: AssertionError<br/> ------------------------------Captured stderr call------------------------------ <br/>DEBUG:test_homePage...:image_cancel元素已定位到
-DEBUG:test_homePage...:未找到元素
-<br/> -------------------------------Captured log call-------------------------------- <br/>DEBUG    test_homePage...:homePage.py:56 image_cancel元素已定位到
-DEBUG    test_homePage...:homePage.py:82 未找到元素<br/></div></td></tr></tbody>
-      <tbody class="skipped results-table-row">
+            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>name: &lt;class &#x27;str&#x27;&gt; 京东
+name: &lt;class &#x27;list&#x27;&gt; [&#x27;京东&#x27;]
+<br/> ------------------------------Captured stderr call------------------------------ <br/>2020-04-19 20:45:21,612 - page.homePage - DEBUG - image_cancel元素已定位到)
+2020-04-19 20:45:22,331 - page.homePage - DEBUG - 进入行情)
+2020-04-19 20:45:31,758 - page.searchPage - DEBUG - 搜索关键字jd)
+2020-04-19 20:45:34,014 - page.searchPage - DEBUG - 点击第一个候选结果)
+2020-04-19 20:45:37,426 - page.searchPage - DEBUG - 进入股票详情)
+2020-04-19 20:45:40,079 - page.stockSelectPage - DEBUG - 点击加自选)
+2020-04-19 20:45:44,497 - page.stockSelectPage - DEBUG - 有弹窗点击确认)
+2020-04-19 20:45:44,546 - page.stockSelectPage - DEBUG - 点击一次返回搜索)
+2020-04-19 20:45:47,027 - page.stockSelectPage - DEBUG - 再次点击返回行情页面)
+<br/> -------------------------------Captured log call-------------------------------- <br/>DEBUG    page.homePage:homePage.py:49 image_cancel元素已定位到
+DEBUG    page.homePage:homePage.py:53 进入行情
+DEBUG    page.searchPage:searchPage.py:29 搜索关键字jd
+DEBUG    page.searchPage:searchPage.py:32 点击第一个候选结果
+DEBUG    page.searchPage:searchPage.py:35 进入股票详情
+DEBUG    page.stockSelectPage:stockSelectPage.py:31 点击加自选
+DEBUG    page.stockSelectPage:stockSelectPage.py:48 有弹窗点击确认
+DEBUG    page.stockSelectPage:stockSelectPage.py:50 点击一次返回搜索
+DEBUG    page.stockSelectPage:stockSelectPage.py:53 再次点击返回行情页面<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
         <tr>
-          <td class="col-result">Skipped</td>
-          <td class="col-name">case/test_home.py::TestRun::test_search_ibm::setup</td>
-          <td class="col-duration">0.00</td>
+          <td class="col-result">Passed</td>
+          <td class="col-name">case/test_stock_select.py::TestStockSelect::test_add_stock[IBM Corp-ibm]</td>
+          <td class="col-duration">30.29</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="log">(&#x27;case\\test_home.py&#x27;, 25, &#x27;Skipped: skip test&#x27;)<br/></div></td></tr></tbody></table></body></html>
+            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>name: &lt;class &#x27;str&#x27;&gt; IBM Corp
+name: &lt;class &#x27;list&#x27;&gt; [&#x27;IBM Corp&#x27;, &#x27;京东&#x27;]
+<br/> ------------------------------Captured stderr call------------------------------ <br/>2020-04-19 20:45:59,035 - page.homePage - DEBUG - 更新元素不存在)
+2020-04-19 20:45:59,444 - page.homePage - DEBUG - 进入行情)
+2020-04-19 20:46:07,790 - page.searchPage - DEBUG - 搜索关键字ibm)
+2020-04-19 20:46:08,859 - page.searchPage - DEBUG - 点击第一个候选结果)
+2020-04-19 20:46:10,659 - page.searchPage - DEBUG - 进入股票详情)
+2020-04-19 20:46:13,161 - page.stockSelectPage - DEBUG - 点击加自选)
+2020-04-19 20:46:15,805 - page.stockSelectPage - DEBUG - 无任何提示，返回行情页面)
+<br/> -------------------------------Captured log call-------------------------------- <br/>DEBUG    page.homePage:homePage.py:51 更新元素不存在
+DEBUG    page.homePage:homePage.py:53 进入行情
+DEBUG    page.searchPage:searchPage.py:29 搜索关键字ibm
+DEBUG    page.searchPage:searchPage.py:32 点击第一个候选结果
+DEBUG    page.searchPage:searchPage.py:35 进入股票详情
+DEBUG    page.stockSelectPage:stockSelectPage.py:31 点击加自选
+DEBUG    page.stockSelectPage:stockSelectPage.py:59 无任何提示，返回行情页面<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">case/test_stock_select.py::TestStockSelect::test_add_stock[拼多多-pdd]</td>
+          <td class="col-duration">28.86</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>name: &lt;class &#x27;str&#x27;&gt; 拼多多
+name: &lt;class &#x27;list&#x27;&gt; [&#x27;拼多多&#x27;, &#x27;IBM Corp&#x27;]
+<br/> ------------------------------Captured stderr call------------------------------ <br/>2020-04-19 20:46:29,095 - page.homePage - DEBUG - 更新元素不存在)
+2020-04-19 20:46:29,469 - page.homePage - DEBUG - 进入行情)
+2020-04-19 20:46:38,007 - page.searchPage - DEBUG - 搜索关键字pdd)
+2020-04-19 20:46:38,892 - page.searchPage - DEBUG - 点击第一个候选结果)
+2020-04-19 20:46:40,710 - page.searchPage - DEBUG - 进入股票详情)
+2020-04-19 20:46:43,196 - page.stockSelectPage - DEBUG - 点击加自选)
+2020-04-19 20:46:45,827 - page.stockSelectPage - DEBUG - 无任何提示，返回行情页面)
+<br/> -------------------------------Captured log call-------------------------------- <br/>DEBUG    page.homePage:homePage.py:51 更新元素不存在
+DEBUG    page.homePage:homePage.py:53 进入行情
+DEBUG    page.searchPage:searchPage.py:29 搜索关键字pdd
+DEBUG    page.searchPage:searchPage.py:32 点击第一个候选结果
+DEBUG    page.searchPage:searchPage.py:35 进入股票详情
+DEBUG    page.stockSelectPage:stockSelectPage.py:31 点击加自选
+DEBUG    page.stockSelectPage:stockSelectPage.py:59 无任何提示，返回行情页面<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">case/test_stock_select.py::TestStockSelect::test_clear_stock</td>
+          <td class="col-duration">18.05</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> ------------------------------Captured stderr call------------------------------ <br/>2020-04-19 20:46:57,374 - page.homePage - DEBUG - 更新元素不存在)
+2020-04-19 20:46:57,722 - page.homePage - DEBUG - 进入行情)
+2020-04-19 20:46:57,722 - page.stockSelectPage - DEBUG - 定义需要等待的元素查找)
+2020-04-19 20:47:00,075 - page.stockSelectPage - DEBUG - wait完成)
+2020-04-19 20:47:00,589 - page.stockSelectPage - DEBUG - 进入编辑group界面)
+2020-04-19 20:47:01,711 - page.stockSelectPage - DEBUG - 点击全选)
+2020-04-19 20:47:02,685 - page.stockSelectPage - DEBUG - 取消关注)
+2020-04-19 20:47:03,688 - page.stockSelectPage - DEBUG - 点击确认)
+<br/> -------------------------------Captured log call-------------------------------- <br/>DEBUG    page.homePage:homePage.py:51 更新元素不存在
+DEBUG    page.homePage:homePage.py:53 进入行情
+DEBUG    page.stockSelectPage:stockSelectPage.py:63 定义需要等待的元素查找
+DEBUG    page.stockSelectPage:stockSelectPage.py:65 wait完成
+DEBUG    page.stockSelectPage:stockSelectPage.py:67 进入编辑group界面
+DEBUG    page.stockSelectPage:stockSelectPage.py:70 点击全选
+DEBUG    page.stockSelectPage:stockSelectPage.py:72 取消关注
+DEBUG    page.stockSelectPage:stockSelectPage.py:74 点击确认<br/></div></td></tr></tbody></table></body></html>

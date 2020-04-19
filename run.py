@@ -21,9 +21,14 @@ report_name = father + '/report/' + homePageCase + nowTime + '.html'
 # home page
 homePage = ['-v', './case/test_home.py', '--html='+report_name]
 
+# mark swipe
+swipe = ['-vm', 'swipe', '--html='+report_name]
+
+# stock select
+stockSelect = ['-v', './case/test_stock_select.py', '--html='+report_name]
 
 if __name__ == '__main__':
-    pytest.main(homePage)
+    pytest.main(stockSelect)
 
 
 
