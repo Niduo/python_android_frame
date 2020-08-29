@@ -15,7 +15,7 @@ log = logging.getLogger(__name__)
 
 class TestStockSelect:
     def setup_class(self):
-        caps = {"deviceName": "127.0.0.1:7555",
+        caps = {"deviceName": "emulator-5554",
                 "appPackage": "com.xueqiu.android",
                 "appActivity": ".view.WelcomeActivityAlias",
                 "platformName": "Android"}
